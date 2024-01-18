@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="-46dp"
+        tools:layout_editor_absoluteY="138dp">
+
+        <EditText
+            android:id="@+id/eT1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned|numberDecimal"
+            android:digits="0123456789"
+            android:maxLength="5"
+            android:hint="数字(すうじ)を入力(にゅうりょく)" />
+
+        <EditText
+            android:id="@+id/eT2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned|numberDecimal"
+            android:digits="0123456789"
+            android:maxLength="5"
+            android:hint="数字(すうじ)を入力(にゅうりょく)" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onButton1"
+            android:enabled="true"
+            android:text="たし算をする" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onButton2"
+            android:enabled="true"
+            android:text="ひき算をする" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onButton3"
+            android:enabled="true"
+            android:text="かけ算をする" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onButton4"
+            android:enabled="true"
+            android:text="わり算をする" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onButton5"
+            android:enabled="true"
+            android:text="消費税10%" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onButton15"
+            android:enabled="true"
+            android:text="15%割引き" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onButton20"
+            android:enabled="true"
+            android:text="20%割引き" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onButton30"
+            android:enabled="true"
+            android:text="30%割引き" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onButton50"
+            android:enabled="true"
+            android:text="50%割引き" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onButton6"
+            android:enabled="true"
+            android:text="消費税8%" />
+
+
+        <EditText
+            android:id="@+id/tvAns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="こたえのエリア"
+            android:textSize="36sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClear"
+            android:text="計算内容をクリア" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
